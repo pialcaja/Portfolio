@@ -1,0 +1,78 @@
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>
+            Hola 👋
+            <br>
+            soy <span class="highlight">Piero Alexander</span>
+        </h1>
+        <p class="subtitle">
+            Desarrollador Web Full Stack<br />
+            Java · Spring Boot · Angular · MySQL
+        </p>
+
+        <div class="hero-actions">
+            <a href="https://github.com/pialcaja/ProyectoGestionUsuarios" target="_blank" class="social-icon"
+                aria-label="GitHub">
+                <app-tech-icon name="github" [size]="40"/>
+            </a>
+
+            <a href="https://www.linkedin.com/in/piero-caro-jara-926ba7291" target="_blank" class="social-icon"
+                aria-label="LinkedIn">
+                <app-tech-icon name="linkedin" [size]="50"/>
+            </a>
+
+            <button class="dark-toggle" (click)="toggleDarkMode()">🌙</button>
+        </div>
+
+    </div>
+
+    <div class="hero-image">
+        <img src="assets/images/home/avatar1.webp" alt="Foto de Piero" />
+    </div>
+</section>
+
+<!-- PROJECTS PREVIEW -->
+<section class="projects-preview">
+    <header class="section-header">
+        <h2>Proyectos Recientes</h2>
+        <p>Algunos de los proyectos que he desarrollado</p>
+    </header>
+
+    <!-- acá luego reutilizas tu grid + project-card -->
+    <div class="projects-grid">
+        <app-project-card *ngFor="let project of projects" [project]="project" />
+    </div>
+
+    <div class="section-action">
+        <a routerLink="/projects" class="btn primary">
+            Ver más proyectos →
+        </a>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about">
+    <header class="section-header">
+        <h2>Sobre mí</h2>
+    </header>
+
+    <p>
+        Soy desarrollador web con enfoque en backend y frontend moderno.
+        Tengo experiencia construyendo aplicaciones con autenticación,
+        APIs REST, manejo de roles, carritos de compra y dashboards administrativos.
+    </p>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-links">
+        <a href="https://linkedin.com/in/tu-perfil" target="_blank">LinkedIn</a>
+        <a href="https://github.com/tu-usuario" target="_blank">GitHub</a>
+        <a href="mailto:tucorreo@email.com">Email</a>
+    </div>
+
+    <button class="back-top" (click)="scrollToTop()">
+        ↑ Volver arriba
+    </button>
+</footer>

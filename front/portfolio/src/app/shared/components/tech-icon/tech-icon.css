@@ -1,0 +1,16 @@
+svg {
+  display: block;
+  fill: var(--accent-primary);
+  transition: fill 0.2s ease, transform 0.2s ease;
+}
+
+:host {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+:host:hover svg {
+  fill: var(--accent-primary);
+  transform: scale(1.1);
+}
