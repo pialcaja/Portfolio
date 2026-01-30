@@ -1,0 +1,33 @@
+<article class="card" (mousemove)="onMouseMove($event)">
+    <!-- HEADER SOLO IMAGEN -->
+    <div class="card-header">
+        <img [src]="project.image" [alt]="project.title" loading="lazy" />
+    </div>
+
+    <!-- BODY -->
+    <div class="card-body">
+        <h3 class="title">{{ project.title }}</h3>
+
+        <p class="description">
+            {{ project.description }}
+        </p>
+
+        <ul class="tech">
+            <li *ngFor="let t of project.tech">
+                <app-tech-icon [name]="t" [size]="40"/>
+            </li>
+        </ul>
+
+        <div class="actions">
+            <a *ngIf="project.github" [href]="project.github" target="_blank" class="btn github">
+
+                <app-tech-icon name="github" [size]="40"/>
+
+            </a>
+
+            <a *ngIf="project.demo" [href]="project.demo" target="_blank" class="btn demo">
+                <app-tech-icon name="demo" [size]="40"/>
+            </a>
+        </div>
+    </div>
+</article>

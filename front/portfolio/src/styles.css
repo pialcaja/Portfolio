@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --bg-main: #ffffff;
+  --bg-soft: #f6f5f8;
+
+  --text-main: #2e1437;
+  --text-muted: #6b6473;
+
+  --accent-primary: #51425f;
+  --accent-secondary: #3f334a;
+}
+
+:root.dark {
+  --bg-main: #2e1437;
+  --bg-soft: #3f334a;
+
+  --text-main: #ffffff;
+  --text-muted: #cfcbd6;
+
+  --accent-primary: #bbadc9;
+  --accent-secondary: #ffffff;
+}
+
+body {
+  font-family: "Merriweather", serif;
+  background-color: var(--bg-main);
+  max-width: 1000px;
+  justify-self: center;
+}
