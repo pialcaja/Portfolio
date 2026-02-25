@@ -13,15 +13,15 @@ export class ProjectsService {
       tech: ['angular', 'spring', 'mysql'],
       image: 'assets/images/projects/gestion-usuarios.webp',
       github: 'https://github.com/pialcaja/ProyectoGestionUsuarios',
-      demo: 'dsfd'
+      demo: 'https://www.youtube.com/@pialcaja'
     },
     {
-      title: 'Sistema de Gestión de Usuarios',
-      description: 'Proyecto FullStack que gestiona usuarios y sus roles.',
+      title: 'Sistema de carrito de compras',
+      description: 'E-commerce de videojuegos desarrollado con Spring Boot y Angular.',
       tech: ['angular', 'spring', 'mysql'],
-      image: '',
-      github: 'https://github.com/pialcaja/ProyectoGestionUsuarios',
-      demo: ''
+      image: 'assets/images/projects/carrito.webp',
+      github: 'https://github.com/pialcaja/ProyectoTienda',
+      demo: 'https://www.youtube.com/@pialcaja'
     }
   ];
 
