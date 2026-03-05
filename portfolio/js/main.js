@@ -1,10 +1,9 @@
 // EFECTO TYPING PARA EL TITULO
-
 // Seleccionar el elemento span dentro del h1 para mostrar el texto dinámico
 const dynamicText = document.querySelector("h1 span");
 
 // Array de palabras para el efecto typing
-const words = ["Pialcaja", "Desarrollador Web", "Java lover", "Ciclista"];
+const words = ["Desarrollador Web", "Java lover", "Ciclista"];
 
 // Variables para controlar el estado del efecto typing
 let wordIndex = 0; // Variable para controlar el índice de la palabra actual
@@ -36,3 +35,4 @@ const typeEffect = () => {
 }
 
 typeEffect(); // Llamar a la función para iniciar el efecto typing
+
