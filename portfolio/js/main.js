@@ -36,3 +36,25 @@ const typeEffect = () => {
 
 typeEffect(); // Llamar a la función para iniciar el efecto typing
 
+// MENU HAMBURGUESA
+const menu = document.querySelector(".toggleMenu");
+const hamburgerBtn = menu.querySelector("li:last-child a");
+const closeBtn = menu.querySelector("li:first-child a");
+
+hamburgerBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    menu.classList.add("open");
+});
+
+closeBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    menu.classList.remove("open");
+});
+
+// Cerrar menú al hacer click en un link de nav
+const navLinks = menu.querySelectorAll("li:not(:first-child):not(:last-child) a");
+navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        menu.classList.remove("open");
+    });
+});
