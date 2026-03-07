@@ -214,6 +214,11 @@ header {
     animation: slideInUp 1s ease-out forwards;
 }
 
+.btn-cv a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .btn-cv:hover {
     background-color: var(--button1-color);
     color: var(--buttonText1-color);
@@ -675,60 +680,12 @@ footer {
         font-size: 1rem;
     }
 
-    /* Ocultar links de nav, mostrar solo hamburguesa */
-    .toggleMenu li:nth-child(2),
-    .toggleMenu li:nth-child(3),
-    .toggleMenu li:nth-child(4),
-    .toggleMenu li:nth-child(5) {
-        display: none !important;
+    .logo h2 {
+        padding-left: 20px;
     }
 
-    /* Mostrar ícono hamburguesa (último li) */
-    .toggleMenu li:last-child {
-        display: flex !important;
-        opacity: 1;
-        animation: none;
-    }
-
-    /* Menú desplegado */
-    .toggleMenu.open {
-        position: fixed;
-        top: 120px;
-        left: 0;
-        width: 100%;
-        flex-direction: column;
-        background-color: var(--bg1-color);
-        padding: 10px 0 20px;
-        z-index: 998;
-        border-top: 1px solid rgba(255, 255, 255, 0.1);
-    }
-
-    .toggleMenu.open li:nth-child(2),
-    .toggleMenu.open li:nth-child(3),
-    .toggleMenu.open li:nth-child(4),
-    .toggleMenu.open li:nth-child(5) {
-        display: flex !important;
-        opacity: 1;
-        animation: none;
-        width: 100%;
-    }
-
-    .toggleMenu.open li:last-child {
-        display: none !important;
-    }
-
-    .toggleMenu.open li:first-child {
-        display: flex !important;
-        opacity: 1;
-        animation: none;
-        align-self: center;
-    }
-
-    .toggleMenu.open a {
-        padding: 14px 24px;
-        font-size: 1.1rem;
-        width: 100%;
-        justify-content: center;
+    .toggleBtn {
+        padding-right: 20px !important;
     }
 
     /* HERO */
@@ -830,6 +787,62 @@ footer {
 
 /* ---- MÓVIL PEQUEÑO (max 480px) ---- */
 @media (max-width: 800px) {
+
+        /* Ocultar links de nav, mostrar solo hamburguesa */
+    .toggleMenu li:nth-child(2),
+    .toggleMenu li:nth-child(3),
+    .toggleMenu li:nth-child(4),
+    .toggleMenu li:nth-child(5) {
+        display: none !important;
+    }
+
+    /* Mostrar ícono hamburguesa (último li) */
+    .toggleMenu li:last-child {
+        display: flex !important;
+        opacity: 1;
+        animation: none;
+    }
+
+    /* Menú desplegado */
+    .toggleMenu.open {
+        position: fixed;
+        top: 120px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background-color: var(--bg1-color);
+        padding: 10px 0 20px;
+        z-index: 998;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .toggleMenu.open li:nth-child(2),
+    .toggleMenu.open li:nth-child(3),
+    .toggleMenu.open li:nth-child(4),
+    .toggleMenu.open li:nth-child(5) {
+        display: flex !important;
+        opacity: 1;
+        animation: none;
+        width: 100%;
+    }
+
+    .toggleMenu.open li:last-child {
+        display: none !important;
+    }
+
+    .toggleMenu.open li:first-child {
+        display: flex !important;
+        opacity: 1;
+        animation: none;
+        align-self: center;
+    }
+
+    .toggleMenu.open a {
+        padding: 14px 24px;
+        font-size: 1.1rem;
+        width: 100%;
+        justify-content: center;
+    }
 
     .hero-title h1 {
         font-size: 1.5rem;
