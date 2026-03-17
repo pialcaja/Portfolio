@@ -786,10 +786,10 @@ footer {
     }
 }
 
-/* ---- MÓVIL PEQUEÑO (max 480px) ---- */
+/* ---- MÓVIL PEQUEÑO (max 800px) ---- */
 @media (max-width: 800px) {
 
-        /* Ocultar links de nav, mostrar solo hamburguesa */
+    /* Ocultar links de nav, mostrar solo hamburguesa */
     .toggleMenu li:nth-child(2),
     .toggleMenu li:nth-child(3),
     .toggleMenu li:nth-child(4),
@@ -867,7 +867,7 @@ footer {
     }
 
     .projects-card {
-        width: 350px;
+        width: 310px;
     }
 
     .techs-title h2 {
